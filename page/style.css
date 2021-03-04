@@ -79,10 +79,12 @@ nav ul li .nav-link:hover i {
   background: #fff;
   transition: var(--transition-speed) ease-in-out;
   overflow: hidden;
+  z-index: 10;
 }
 
-.navbar-side:hover {
-  width: var(--side-nav-after);
+.navbar-side:hover,
+.navbar-side.active {
+    width: var(--side-nav-after);
 }
 
 .navbar-side ul {
@@ -152,6 +154,38 @@ nav ul li .nav-link:hover i {
   font-weight: bolder;
 }
 
+.toggle{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  cursor: pointer;
+  font-size: 24px;
+  text-align: center;
+}
+
+.toggle>span{
+  display: inline-block;
+  vertical-align: center;
+  line-height: normal;
+  color: #007bff;
+}
+
 .card-flew-row {
   flex-direction: row;
+}
+
+@media (max-width: 767px){
+  .navbar-side{
+    left: calc(var(--side-nav-before) * -1);
+  }
+  .navbar-side.active{
+    left: 0;
+  }
+  #main-content, .navbar-side:hover + #main-content{
+    left: 0;
+    width: 100vw;
+  }
 }
