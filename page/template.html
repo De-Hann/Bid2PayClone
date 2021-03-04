@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!--FontAwesome-->
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!--Navbar top-->
+    <nav class="navbar navbar-expand-sm p-0 bg-white" id="navbar-top">
+      <a class="navbar-brand d-none d-md-block align-top" id="brand" href="#">
+        <img
+          src="image/favicon.png"
+          alt
+          class="d-inline img-fluid"
+          width="40"
+          height="40"
+        />
+        <span> Bid2Pay </span>
+      </a>
+
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="far fa-bell"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-user"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container-fluid" id="container">
+      <div id="content">
+        <!--sidebar nav-->
+        <div class="navbar-side">
+          <ul>
+            <li>
+              <a href="#">
+                <span class="sidebar-nav-icon">
+                  <i class="fas fa-columns"></i>
+                </span>
+                <span class="sidebar-nav-name"> Dashboard </span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="sidebar-nav-icon">
+                  <i class="fas fa-home"></i>
+                </span>
+                <span class="sidebar-nav-name"> Home </span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="sidebar-nav-icon">
+                  <i class="fas fa-microphone-alt"></i>
+                </span>
+                <span class="sidebar-nav-name"> Live Auction </span>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="sidebar-nav-link collapsed"
+                data-toggle="collapse"
+                href="#PaymentNavTables"
+                aria-expanded="false"
+                aria-controls="navTables"
+              >
+                <span class="sidebar-nav-icon">
+                  <i class="fas fa-chart-pie"></i>
+                </span>
+                <span class="sidebar-nav-name"> Payment </span>
+                <span class="sidebar-nav-end">
+                  <i class="fas fa-sort-down"></i>
+                </span>
+              </a>
+              <ul class="sidebar-sub-nav collapse" id="PaymentNavTables">
+                <li class="sidebar-nav-item">
+                  <a
+                    href="https://bid2pay.com/user/active"
+                    class="sidebar-nav-link"
+                  >
+                    <span class="sidebar-nav-abbr"> Re </span>
+                    <span class="sidebar-nav-name"> Receive </span>
+                  </a>
+                </li>
+
+                <li class="sidebar-nav-item">
+                  <a
+                    href="https://bid2pay.com/user/old"
+                    class="sidebar-nav-link"
+                  >
+                    <span class="sidebar-nav-abbr"> Pa </span>
+                    <span class="sidebar-nav-name"> Pay </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="sidebar-nav-link collapsed"
+                data-toggle="collapse"
+                href="#CoinsNavTables"
+                aria-expanded="false"
+                aria-controls="navTables"
+              >
+                <span class="sidebar-nav-icon">
+                  <i class="fas fa-bars"></i>
+                </span>
+                <span class="sidebar-nav-name"> Coins </span>
+                <span class="sidebar-nav-end">
+                  <i class="fas fa-sort-down"></i>
+                </span>
+              </a>
+              <ul class="sidebar-sub-nav collapse" id="CoinsNavTables">
+                <li class="sidebar-nav-item">
+                  <a
+                    href="https://bid2pay.com/user/active"
+                    class="sidebar-nav-link"
+                  >
+                    <span class="sidebar-nav-abbr"> Ac </span>
+                    <span class="sidebar-nav-name"> Active </span>
+                  </a>
+                </li>
+
+                <li class="sidebar-nav-item">
+                  <a
+                    href="https://bid2pay.com/user/old"
+                    class="sidebar-nav-link"
+                  >
+                    <span class="sidebar-nav-abbr"> Ol </span>
+                    <span class="sidebar-nav-name"> Old </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="sidebar-nav-link collapsed"
+                data-toggle="collapse"
+                href="#DownlineNavTables"
+                aria-expanded="false"
+                aria-controls="navTables"
+              >
+                <span class="sidebar-nav-icon">
+                  <i class="fas fa-chalkboard"></i>
+                </span>
+                <span class="sidebar-nav-name"> Downline </span>
+                <span class="sidebar-nav-end">
+                  <i class="fas fa-sort-down"></i>
+                </span>
+              </a>
+              <ul class="sidebar-sub-nav collapse" id="DownlineNavTables">
+                <li class="sidebar-nav-item">
+                  <a
+                    href="https://bid2pay.com/user/active"
+                    class="sidebar-nav-link"
+                  >
+                    <span class="sidebar-nav-abbr"> Re </span>
+                    <span class="sidebar-nav-name"> Referals </span>
+                  </a>
+                </li>
+
+                <li class="sidebar-nav-item">
+                  <a
+                    href="https://bid2pay.com/user/old"
+                    class="sidebar-nav-link"
+                  >
+                    <span class="sidebar-nav-abbr"> Bo </span>
+                    <span class="sidebar-nav-name"> Bonuses </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="sidebar-nav-link collapsed"
+                data-toggle="collapse"
+                href="#SettingsNavTables"
+                aria-expanded="false"
+                aria-controls="navTables"
+              >
+                <span class="sidebar-nav-icon">
+                  <i class="fas fa-th-large"></i>
+                </span>
+                <span class="sidebar-nav-name"> Settings </span>
+                <span class="sidebar-nav-end">
+                  <i class="fas fa-sort-down"></i>
+                </span>
+              </a>
+              <ul class="sidebar-sub-nav collapse" id="SettingsNavTables">
+                <li class="sidebar-nav-item">
+                  <a
+                    href="https://bid2pay.com/user/active"
+                    class="sidebar-nav-link"
+                  >
+                    <span class="sidebar-nav-abbr"> Pr </span>
+                    <span class="sidebar-nav-name"> Profile </span>
+                  </a>
+                </li>
+
+                <li class="sidebar-nav-item">
+                  <a
+                    href="https://bid2pay.com/user/old"
+                    class="sidebar-nav-link"
+                  >
+                    <span class="sidebar-nav-abbr"> No </span>
+                    <span class="sidebar-nav-name"> Notifications </span>
+                  </a>
+                </li>
+                <li class="sidebar-nav-item">
+                  <a
+                    href="https://bid2pay.com/user/old"
+                    class="sidebar-nav-link"
+                  >
+                    <span class="sidebar-nav-abbr"> Up </span>
+                    <span class="sidebar-nav-name"> Updates </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!--Page content-->
+        <div class="" id="main-content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+            velit cumque dicta nesciunt dolor reiciendis necessitatibus
+            similique possimus dolore nostrum architecto, modi repellat deleniti
+            hic libero beatae, tenetur culpa! Quia, nulla veniam dolore
+            laudantium consectetur ex beatae fuga nobis, ullam optio eligendi
+            quo labore necessitatibus numquam quod voluptates, illum ad
+            praesentium maxime suscipit aspernatur! Blanditiis ratione delectus
+            numquam unde vel, quisquam dolor et nemo nihil quibusdam at, error
+            incidunt. Aspernatur odio exercitationem repellendus veritatis rem
+            deleniti officia dicta ab quia voluptas. Modi, ad quos inventore
+            praesentium laboriosam fuga aspernatur voluptates, velit cupiditate
+            impedit dolorum eius sapiente facere vel neque delectus aliquam,
+            provident accusantium optio quas pariatur minima maxime! Odio, dolor
+            nesciunt consequatur doloribus accusantium eveniet illo commodi
+            reprehenderit debitis! Ea vitae fugit soluta temporibus. Magni
+            temporibus suscipit dignissimos, ab expedita rerum eligendi autem
+            nesciunt laboriosam dolor cum aliquid dicta quas saepe fugiat
+            distinctio quia perspiciatis amet atque excepturi? Sed neque
+            reiciendis ullam ipsam harum eos, saepe veritatis repudiandae itaque
+            quos officia dolor iste fugit est officiis magnam ducimus quibusdam
+            exercitationem tempora consectetur provident! Suscipit ea quod hic
+            dolor vero animi corporis, nihil ipsa ut recusandae dicta qui
+            obcaecati odit repudiandae assumenda, eum ad modi? Eaque ipsum vitae
+            molestiae debitis quo ad sit nobis ex, tempore quas sed repellendus
+            labore dignissimos est maxime soluta. Quidem reprehenderit porro
+            delectus quod fugit praesentium velit. Eum quidem quos impedit
+            aliquid rem dolorum sunt, autem, quo officia, maxime nemo. Totam
+            voluptatum odio quaerat iure asperiores molestias in ratione
+            recusandae voluptatem nulla ex, dicta laborum exercitationem,
+            commodi reprehenderit distinctio est tempore itaque facere error
+            adipisci! Praesentium excepturi aliquid error corrupti rem sequi
+            iusto ea quos cupiditate odit cumque dolores maiores, temporibus
+            assumenda quasi dicta sed eius ipsa ratione aperiam ab nisi
+            aspernatur quas necessitatibus! Nostrum, maxime? Numquam perferendis
+            voluptatem vero ratione eveniet excepturi. Ipsam, iste laborum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, ex!
+            Corporis quam hic qui consequuntur iure, sequi atque fugit obcaecati
+            debitis nisi exercitationem voluptatibus expedita doloremque! Illo
+            laborum, dignissimos, similique eum accusantium, libero quos
+            consectetur quam saepe molestias hic accusamus aspernatur nam. Vitae
+            placeat, sunt neque aspernatur quos harum pariatur praesentium
+            officiis voluptatibus error illum eum amet voluptatum quo obcaecati
+            modi dignissimos repudiandae in itaque culpa odio nulla illo
+            perspiciatis earum! Nemo dolore magni obcaecati explicabo?
+            Voluptatibus ex praesentium quibusdam quaerat, tempora dignissimos
+            quod dolorum illo velit aperiam optio modi quas fugiat nostrum dolor
+            quidem quis dicta obcaecati! Ea saepe id, asperiores necessitatibus
+            vitae exercitationem, laborum amet molestias corporis aliquid,
+            numquam libero ullam dignissimos et illum illo recusandae est
+            ratione! Eum, earum eos voluptatibus nostrum numquam blanditiis
+            inventore non nam vitae reiciendis animi. Unde facere nam
+            necessitatibus labore, ipsum est ipsam sequi vel reprehenderit odit
+            odio error doloremque velit ex aperiam maiores ad similique!
+            Eligendi veritatis harum impedit architecto amet deserunt est ex
+            sequi delectus distinctio esse provident quo rem libero consectetur
+            ratione, itaque recusandae, dolore optio natus! Voluptatum non
+            laboriosam itaque sit eveniet tempore reprehenderit explicabo.
+            Commodi eligendi itaque quam reprehenderit nam totam neque, ut
+            maiores voluptate a molestiae modi rerum cumque magni facere! Ea
+            alias exercitationem sapiente non explicabo. Velit quia pariatur
+            enim totam culpa blanditiis sequi illum maxime harum! Eos debitis
+            aliquid libero quod explicabo. Facere hic cum accusantium molestiae
+            provident dolor nam magnam quos libero ducimus, consectetur
+            voluptatibus blanditiis repudiandae atque ipsa ad assumenda,
+            accusamus a placeat numquam quae! Asperiores, inventore quae dolor
+            corporis nisi laudantium maxime consequuntur? Porro earum neque amet
+            assumenda cupiditate cum eius autem eligendi ullam voluptas!
+            Consequatur soluta nihil, esse mollitia ab fuga voluptates,
+            quibusdam provident ducimus consequuntur adipisci nesciunt illum aut
+            sequi rem magnam corrupti enim inventore eos deleniti iste velit
+            voluptatum illo quae. Eaque, at facere. Est reprehenderit incidunt
+            natus provident voluptatibus libero placeat in culpa iste dolor,
+            quasi nihil nostrum nisi? Omnis illum quos ullam dolorum non quidem
+            molestiae, iure assumenda! Maxime consequuntur officiis veniam esse!
+            Tempora reprehenderit laborum quos nam sequi. Ad doloremque
+            doloribus dicta nemo sint! Ipsam amet deserunt velit debitis alias
+            corporis voluptatum nihil aperiam, eaque, facilis iusto, ipsa
+            maiores dolor earum? Necessitatibus in similique est nobis, repellat
+            voluptatem odit. Eos suscipit molestias dolores non adipisci ipsa
+            delectus hic ullam. Quam reprehenderit, distinctio nulla rerum
+            voluptas, mollitia accusantium modi enim quisquam sapiente esse.
+            Provident adipisci quasi sequi atque cumque aspernatur qui
+            doloribus, iste similique iusto dicta reprehenderit, repellat fugit!
+            Velit atque quo sapiente minima consequuntur omnis alias expedita
+            hic provident odio! Odio quidem ducimus reiciendis ab voluptate
+            tempora, hic saepe praesentium. Distinctio nostrum minima ducimus
+            asperiores perspiciatis consectetur blanditiis non autem provident
+            illo eius perferendis facilis, cumque dicta rerum quaerat? Sint
+            harum animi, dolorem odit sequi adipisci veniam! Libero repellat
+            iusto quo. Eligendi repellendus fugit neque beatae molestiae
+            officiis aliquid officia, accusantium et minima, ad ratione
+            inventore nam veritatis magni fugiat soluta ab. Consectetur tempore
+            ea quaerat dolor reiciendis amet, quasi consequuntur? Quae eum
+            distinctio nisi!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--JS for bootstrap-->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+
+  <footer></footer>
+</html>
