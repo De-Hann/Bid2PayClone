@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard | Bid2Pay</title>
+    <title>Active Coins | Bid2Pay</title>
 
     <!-- Bootstrap -->
     <link
@@ -62,6 +62,7 @@
         </li>
       </ul>
     </nav>
+    
     <div class="container-fluid" id="container">
       <div id="content">
         <!--sidebar nav-->
@@ -92,13 +93,13 @@
               </a>
             </li>
             <li>
-              <a href="BuyNow.html">
-                <span class="sidebar-nav-icon">
-                  <i class="fas fa-shopping-cart"></i>
-                </span>
-                <span class="sidebar-nav-name"> Buy Now </span>
-              </a>
-            </li>
+                <a href="BuyNow.html">
+                  <span class="sidebar-nav-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                  </span>
+                  <span class="sidebar-nav-name"> Buy Now </span>
+                </a>
+              </li>
             <li class="nav-item dropdown">
               <a
                 class="sidebar-nav-link collapsed"
@@ -267,68 +268,74 @@
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="Dashboard.html" class="text-primary">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+              <li class="breadcrumb-item active" aria-current="page">Active Coins</li>
             </ol>
           </nav>
-          <h1>Dashboard</h1>
-          <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-            <div class="alert alert-info alert-with-icon text-center" data-notify="container">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-                </button>
-                <span>
-                  <b> Info - </b> You need to <a href="mobile.html" style="font-weight:bold;">
-                  verify your mobile number</a> before placing bids!
-                </span>
+          <h1>Active Coins</h1>
+
+          <div class="row m-1">
+              <div class="card w-100">
+                  <div class="card-header">
+                      <p>All active coins</p>
+                  </div>
+                  <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6 d-flex align-items-center justify-content-center justify-content-end-md">
+                            <form action="">
+                                <div class="form-group form-inline">
+                                    <label for="search" class="col-form-label">Show:&NonBreakingSpace;&NonBreakingSpace;</label>
+                                    <select id="inputState" class="form-control">
+                                        <option selected>10</option>
+                                        <option>25</option>
+                                        <option>50</option>
+                                        <option>100</option>
+                                        </select>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-6 d-flex align-items-center justify-content-center justify-content-start-md">
+                            <form action="">
+                                <div class="form-group form-inline">
+                                    <label for="search" class="col-form-label">Search:&NonBreakingSpace;&NonBreakingSpace;</label>
+                                    <input type="email" class="form-control" id="search" aria-describedby="search" placeholder="">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <table class="table table-hover">
+                            <thead>
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Coins</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Created on</th>
+                                <th scope="col">Action</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td colspan="6" class="text-center">No data available in table</td>
+                              </tr>
+
+                            </tbody>
+                          </table>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 d-flex align-items-center justify-content-center justify-content-end-md">
+                        <p>Showing 0 to 0 of 0 entries</p>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center justify-content-center justify-content-end-md">
+                        <a href="">Previous&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</a>
+                        <a href="">Next</a>
+                        </div>
+                  </div>
+              </div>
             </div>
         </div>
+        </div>
       </div>
-          <div class="row m-1 d-flex justify-content-center align-items-center">
-            <div class="card m-1 align-items-center text-center col-md-6 col-lg bg-primary text-light card-flew-row">
-              <div class="card-header"><i class="fas fa-circle-notch"></i></div>
-              <div class="card-body">COINS<br/>R0</div>
-            </div>        
-            <div class="card m-1 align-items-center text-center col-md-6 col-lg bg-success text-light card-flew-row">
-              <div class="card-header"><i class="far fa-window-maximize"></i></i></div>
-              <div class="card-body">Payments<br/>R0</div>
-            </div>        
-            <div class="card m-1 align-items-center text-center col-md-6 col-lg bg-primary text-light card-flew-row">
-              <div class="card-header"><i class="fas fa-bold"></i></div>
-              <div class="card-body">Bonuses<br/>R0</div>
-            </div>        
-            <div class="card m-1 align-items-center text-center col-md-6 col-lg bg-success text-light card-flew-row">
-              <div class="card-header"><i class="fas fa-user"></i></div>
-              <div class="card-body">Referrals<br/>R0</div>
-            </div>        
-
-
-            </div>
-
-            <div class="row m-1">
-              <div class="card col-md-6 col-lg-8 m-1 border-dark">
-                <div class="card-header border-dark w-100">SYSTEM UPDATES</div>
-                <div class="card-body">
-                  <h3 class="card-title">You snooze, You lose!</h3>
-                  <p class="card-text">Make sure you have quick fingers to bid. Please be careful when asking for other people to help bid for you. Only choose the people you trust. Login and get ready to bid at least 5 minutes before the next auction because if you miss the first minute of the auction you might miss that big fish.</p>
-                  <p><i>1 month ago</i></p>
-                  <a class="btn btn-primary text-light" href="updates.html">More Updates</a>
-                </div> 
-              </div>
-              <div class="card col-md-6 col-lg-3 m-1 border-dark">
-                <div class="card-header border-dark w-100">Auctions</div>
-                <div class="card-body">
-                  <h3 class="card-title">7AM & 7PM</h3>
-                  <p class="card-text">Coins will only be sold as soon as countdown begins below.</p>
-                  <h3 class="text-danger">0 entries</h3>
-                  <a class="btn btn-success text-light" href="">Live</a>
-                </div> 
-            </div>
-          </div>
-
-      </div>
-      </div>
+    </div>
 
     <!--JS for bootstrap-->
     <script
